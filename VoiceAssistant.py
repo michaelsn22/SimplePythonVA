@@ -167,11 +167,11 @@ class assistance_gui:
         pyautogui.press('win')
         time.sleep(0.1)  # Wait for the start menu to open
 
-        # Type "Discord"
+        # Type "notepad"
         pyautogui.write('notepad')
         time.sleep(0.1)  # Wait for the search results
 
-        # Press Enter to open discord
+        # Press Enter to open notepad
         pyautogui.press('enter')
     
     def open_steam(self):
@@ -183,7 +183,7 @@ class assistance_gui:
         pyautogui.write('steam')
         time.sleep(0.1)  # Wait for the search results
 
-        # Press Enter to open discord
+        # Press Enter to open steam
         pyautogui.press('enter')
     
     def open_runescape(self):
@@ -216,7 +216,7 @@ class assistance_gui:
     def execute_command(self, instruction):
         print(instruction)
         if 'who are you' in instruction:
-            self.speak('lol stfu')
+            self.speak('nobody special')
         elif 'wake up' in instruction:
             self.speak('ok im here chill')
         elif 'increment counter' in instruction or 'add to counter' in instruction:
@@ -226,7 +226,7 @@ class assistance_gui:
             self.speak('ok im resetting the counter')
             self.resetIncrementableValue()
         elif 'counter value' in instruction or 'what is the counter value' in instruction or 'what is the counter' in instruction:
-            self.speak('ok the value is ')
+            self.speak('ok the counter value is ')
             self.returnIncrementableValue()
         elif 'open unity' in instruction:
             self.speak('opening unity')
